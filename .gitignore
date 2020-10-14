@@ -1,5 +1,6 @@
 # static generated files by hugo
 public/
+resources/
 
 # Windows image file caches
 Thumbs.db

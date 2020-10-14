@@ -5,8 +5,8 @@ date: 2020-10-13
 tags: ["info"]
 ---
 
-A group o people interested in technology, privacy and -obviously- robot
-vacuum cleaners 😁
+A group o people interested in technology, privacy and -obviously-
+vacuum cleanning robots 😁
 
 ### Goals
 
