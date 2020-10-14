@@ -7,7 +7,7 @@ test:
   script:
   - hugo
   except:
-  - web
+  - master
 
 pages:
   script:
@@ -16,4 +16,4 @@ pages:
     paths:
     - public
   only:
-  - web
+  - master
