@@ -1,4 +1,4 @@
-## Wellcome to FreeCon.ga
+## Welcome to FreeCon.ga
 
 Here you'll find the means **to free your Conga** vacuum cleaning
 robot from the cloud, so you can get rid of that *little round spy*
