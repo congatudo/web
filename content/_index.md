@@ -10,4 +10,22 @@ By the way, this is the kind of Congas that we liberate:
 
 ![Conga Vacuum cleaning robot](conga-robot.jpg)
 
-You can explore [our repository](https://gitlab.com/freeconga/freecon.ga/).
+This is still a **work in progress** thing, but with a lot of effort
+already done and with (very) promising results already.
+
+You can explore [our repository](https://gitlab.com/freeconga/stuff). The devices we are aiming at are [these Congas](/page/congas).
+
+
+## This project sources from others
+
+* [Dennis Giese's heaven](https://dontvacuum.me/)
+* [BadConga](https://github.com/adrigzr/badconga)
+* [Lupin's blog](https://blog.lupin.rocks/)
+* [Valetudo](https://github.com/Hypfer/Valetudo)
+* [Awesome Vacuum](https://github.com/awesome-vacuum/awesome-vacuum)
+
+## LICENSE
+
+This work is licensed under the [GNU General Public License v3.0](https://gitlab.com/freeconga/stuff/-/blob/master/LICENSE-GPLV30). All media and data files that are not source code are licensed under the [Creative Commons Attribution 4.0 BY-SA license](https://gitlab.com/freeconga/stuff/-/blob/master/LICENSE-CCBYSA40).
+
+More information about licenses in [Opensource licenses](https://opensource.org/licenses/) and [Creative Commons licenses](https://creativecommons.org/licenses/).

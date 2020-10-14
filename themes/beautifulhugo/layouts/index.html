@@ -9,10 +9,10 @@
         {{ end }}
 
         <div class="posts-list">
-          {{ $pag := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+          <!--{{ $pag := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
           {{ range $pag.Pages }}
             {{ partial "post_preview" . }}
-          {{ end }}
+          {{ end }}-->
         </div>
 
         {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
