@@ -1,0 +1,41 @@
+baseurl = "https://freecon.ga/"
+contentdir    = "content"
+staticdir     = "static"
+layoutdir     = "layouts"
+publishdir    = "public"
+title         = "FreeCon.ga"
+canonifyurls  = true
+
+DefaultContentLanguage = "en"
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+pygmentsUseClasses = true
+pygmentCodeFences = true
+
+[Params]
+  subtitle = "Free your Conga vacuum cleaner!"
+  logo = "freeconga.png"
+  favicon = "img/favicon.ico"
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = false
+  comments = false
+
+[Author]
+  name = "Conga hacking community"
+  gitlab = "freeconga"
+
+[[menu.main]]
+    name = "Home"
+    url = ""
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "page/about/"
+    weight = 3
+
+[[menu.main]]
+    name = "Congas"
+    url = "page/congas/"
+    weight = 2
