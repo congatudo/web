@@ -24,6 +24,7 @@ pygmentCodeFences = true
 [Author]
   name = "Conga hacking community"
   gitlab = "freeconga"
+  telegram = "freeconga"
 
 [[menu.main]]
     name = "Home"
