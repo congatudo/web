@@ -15,9 +15,13 @@ already done and with (very) promising results already.
 
 You can explore [our repository](https://gitlab.com/freeconga/stuff). The devices we are aiming at are [these Congas](/page/congas).
 
+## We love our robots
+
+{{< youtube 0XrttatSpiE >}}
 
 ## This project sources from others
 
+* [Sergio's Open Doñita](https://gitlab.com/rastersoft/opendonita) (the original precursor 😊)
 * [Dennis Giese's heaven](https://dontvacuum.me/)
 * [BadConga](https://github.com/adrigzr/badconga)
 * [Lupin's blog](https://blog.lupin.rocks/)
