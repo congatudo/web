@@ -25,6 +25,7 @@ You can explore [our repository](https://gitlab.com/freeconga/stuff). The device
 * [Dennis Giese's heaven](https://dontvacuum.me/)
 * [BadConga](https://github.com/adrigzr/badconga)
 * [Lupin's blog](https://blog.lupin.rocks/)
+* [I took the red pill](https://itooktheredpill.irgendwo.org/2020/rooting-xiaomi-vacuum-robot/)
 * [Valetudo](https://github.com/Hypfer/Valetudo)
 * [Awesome Vacuum](https://github.com/awesome-vacuum/awesome-vacuum)
 
