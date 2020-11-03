@@ -19,6 +19,10 @@ You can explore [our repository](https://gitlab.com/freeconga/stuff). The device
 
 {{< youtube 0XrttatSpiE >}}
 
+![Nikis Galicia](nikisgalicia.jpg)
+
+Caricature from [Nikis Galicia](https://www.nikisgalicia.com/ga/mozo-camisetas/camiseta-pasa-pa-casa-rapas-12706)
+
 ## This project sources from others
 
 * [Sergio's Open Doñita](https://gitlab.com/rastersoft/opendonita) (the original precursor 😊)
