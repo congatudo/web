@@ -18,30 +18,71 @@
 			.reveal h5 {
 				text-transform: none;
 			}
+			.darker { opacity: 0.4; }
 		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-					<img src="../project.jpg">
+				<section data-background="project.jpg" data-background-size="100%">
 				</section>
 				<section>
 					<h1>nuestra historia</h1>
-					<p class="fragment">nuestros animalitos</p>
-					<p class="fragment">y sus problemas...</p>
+				</section>
+				<section data-background="animalitos.jpg" data-background-size="100%">
+					<h5 style="margin-top:400px;">nuestros animalitos</h5>
+				</section>
+				<section data-background="raster-espia.png" data-background-size="100%">
+					<h5 style="margin:-300px 0 0 -400px;color: black;">y sus problemas ...</h5>
 				</section>
 				<section>
-					<h1>hardware y software</h1>
-					<h5 style="color: gray;">... un poco de ingeniería inversa</h5>
-					<p class="fragment">qué llevan</p>
-					<p class="fragment">qué hacen</p>
+					<h5 style="color: gray;">ahora, un poco de ...</h5>
+					<h1 class="fragment">INGENIERÍA</h1>
+					<h5 class="fragment">(inversa)</h5>
+					<h1 class="fragment">😎😅</h1>
+				</section>
+				<section>
+					<section>
+						<h1>qué llevan</h1>
+						<h5 class="darker">(a.k.a. &ldquo;hardware&rdquo;)</h5>
+					</section>
+					<section>
+						<h5>exterior</h5>
+						<img src="viomi-v2.jpg">
+					</section>
+					<section>
+						<h5>interior</h5>
+						<img src="CRL200S-PCB.png">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>qué hacen</h1>
+						<h5 class="darker">(a.k.a. &ldquo;software&rdquo;)</h5>
+					</section>
+					<section>
+						<h5>APPs</h5>
+						<img src="apps.png">
+					</section>
+					<section>
+						<h1>¿y qué <span style="color:red;">NO</span> hacen?</h1>
+					</section>
 				</section>
 				<section>
 					<h1>¡OS al rescate!</h1>
-					<p class="fragment">Open Doñita</p>
-					<p class="fragment">La comunidad</p>
-					<p class="fragment">Nuestro proyecto</p>
+					<p class="fragment">Open Doñita <a href="https://gitlab.com/rastersoft/opendonita" target="_blank">[&#8594;]</a></p>
+					<p class="fragment">La comunidad <a href="https://freecon.ga/#this-project-sources-from-others" target="_blank">[&#8594;]</a></p>
+					<p class="fragment"><a href="https://freecon.ga">freecon.ga</a></p>
+				</section>
+				<section>
+					<h1>posibilidades</h1>
+					<p class="fragment">mejoras funcionales</p>
+					<p class="fragment">Open Hardware </p>
+					<p class="fragment">¿tu pareja de baile?</p>
+				</section>
+				<section>
+					<video src="vamosabailar.mp4" data-autoplay></video>
+					<h5 class="fragment" style="color:#ca05fc;">&ldquo;hola, soy tu Conga y vamos a bailar&rdquo;</h5>
 				</section>
 				<section data-background="davila.png" data-background-size="100%" data-background-color="#111">
 					<h1>¿preguntas?</h1>
@@ -55,6 +96,7 @@
 		</div>
 
 		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
@@ -63,10 +105,13 @@
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
+				controls: true,
+				progress: false,
+				center: true,
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
 	</body>
