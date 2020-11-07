@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>FreeConga</title>
+		<title>FreeConga en la OSHWDem-2020</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -30,7 +30,7 @@
 					<h1>nuestra historia</h1>
 				</section>
 				<section data-background="animalitos.jpg" data-background-size="100%">
-					<h5 style="margin-top:400px;">nuestros animalitos</h5>
+					<h5 style="margin-top:460px;">nuestros animalitos</h5>
 				</section>
 				<section data-background="raster-espia.png" data-background-size="100%">
 					<h5 style="margin:-300px 0 0 -400px;color: black;">y sus problemas ...</h5>
@@ -65,7 +65,14 @@
 						<img src="apps.png">
 					</section>
 					<section>
+						<h5>Tráfico de red</h5>
+						<img src="sniffing.jpg">
+					</section>
+					<section>
 						<h1>¿y qué <span style="color:red;">NO</span> hacen?</h1>
+						<p class="fragment">hardware desaprovechado (wifi, audio, ...)</p>
+						<p class="fragment">funcionalidades capadas (APP-dependientes)</p>
+						<p class="fragment">garantizar la privacidad <a href="https://www.businessinsider.es/aviso-grupo-hackers-espanoles-cecotec-aspiradoras-conga-685303" target="_blank">[&#8594;]</a></p>
 					</section>
 				</section>
 				<section>
@@ -75,16 +82,19 @@
 					<p class="fragment"><a href="https://freecon.ga">freecon.ga</a></p>
 				</section>
 				<section>
-					<h1>posibilidades</h1>
-					<p class="fragment">mejoras funcionales</p>
-					<p class="fragment">Open Hardware </p>
-					<p class="fragment">¿tu pareja de baile?</p>
+					<div class="r-stack">
+						<div>
+							<h1>posibilidades</h1>
+							<p class="fragment">mejoras funcionales</p>
+							<p class="fragment">Open Hardware</p>
+							<p class="fragment">¿tu pareja de baile?</p>
+						</div>
+						<video controls data-autoplay class="fragment">
+							<source data-src="vamosabailar.mp4" type="video/mp4" />
+						</video>
+					</div>
 				</section>
-				<section>
-					<video src="vamosabailar.mp4" data-autoplay></video>
-					<h5 class="fragment" style="color:#ca05fc;">&ldquo;hola, soy tu Conga y vamos a bailar&rdquo;</h5>
-				</section>
-				<section data-background="davila.png" data-background-size="100%" data-background-color="#111">
+				<section data-background="davila.png" data-background-size="100%" data-autoslide="0">
 					<h1>¿preguntas?</h1>
 					<ul style="padding-bottom: 10%;">
 						<li><a href="https://freecon.ga">freecon.ga</a></li>
@@ -105,11 +115,15 @@
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
+				width: 1440,
+				height: 900,
+				margin: 0,
+				minScale: 0.2,
+				maxScale: 2.0,
 				controls: true,
 				progress: false,
 				center: true,
 				hash: true,
-
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes ]
 			});

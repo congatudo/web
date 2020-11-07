@@ -33,6 +33,13 @@ Caricature from [Nikis Galicia](https://www.nikisgalicia.com/ga/mozo-camisetas/c
 * [Valetudo](https://github.com/Hypfer/Valetudo)
 * [Awesome Vacuum](https://github.com/awesome-vacuum/awesome-vacuum)
 
+## Contact
+
+Join us! Share! Let's do something together!
+
+* [Telegram group](https://telegram.me/freeconga)
+* [Gitlab group](https://gitlab.com/freeconga)
+
 ## LICENSE
 
 This work is licensed under the [GNU General Public License v3.0](https://gitlab.com/freeconga/stuff/-/blob/master/LICENSE-GPLV30). All media and data files that are not source code are licensed under the [Creative Commons Attribution 4.0 BY-SA license](https://gitlab.com/freeconga/stuff/-/blob/master/LICENSE-CCBYSA40).
