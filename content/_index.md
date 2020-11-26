@@ -15,6 +15,13 @@ already done and with (very) promising results already.
 
 You can explore [our repository](https://gitlab.com/freeconga/stuff). The devices we are aiming at are [these Congas](/page/congas).
 
+## Why this project?
+
+You can just read the news and decide for yourself: 😁
+
+* [personal data compromised - Business Insider - ES](https://www.businessinsider.es/aviso-grupo-hackers-espanoles-cecotec-aspiradoras-conga-685303)
+* [no cloud, no vacuum - Xakata - ES](https://www.xataka.com/otros-dispositivos/caida-parcial-servidores-amazon-ha-provocado-que-aspiradoras-dejen-funcionar)
+
 ## We love our robots
 
 {{< youtube 0XrttatSpiE >}}
@@ -22,6 +29,7 @@ You can explore [our repository](https://gitlab.com/freeconga/stuff). The device
 ![Nikis Galicia](nikisgalicia.jpg)
 
 Caricature from [Nikis Galicia](https://www.nikisgalicia.com/ga/mozo-camisetas/camiseta-pasa-pa-casa-rapas-12706)
+used with [its author](https://obichero.com) permission.
 
 ## This project sources from others
 
