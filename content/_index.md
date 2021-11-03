@@ -13,7 +13,7 @@ By the way, this is the kind of Congas that we liberate:
 This is still a **work in progress** thing, but with a lot of effort
 already done and with (very) promising results already.
 
-You can explore [our repository](https://gitlab.com/freeconga/stuff). The devices we are aiming at are [these Congas](/page/congas).
+You can explore [our repository](https://github.com/freeconga/stuff). The devices we are aiming at are [these Congas](/page/congas).
 
 ## Why this project?
 
@@ -46,10 +46,10 @@ used with [its author](https://obichero.com) permission.
 Join us! Share! Let's do something together!
 
 * [Telegram group](https://telegram.me/freeconga)
-* [Gitlab group](https://gitlab.com/freeconga)
+* [Github group](https://github.com/freeconga)
 
 ## LICENSE
 
-This work is licensed under the [GNU General Public License v3.0](https://gitlab.com/freeconga/stuff/-/blob/master/LICENSE-GPLV30). All media and data files that are not source code are licensed under the [Creative Commons Attribution 4.0 BY-SA license](https://gitlab.com/freeconga/stuff/-/blob/master/LICENSE-CCBYSA40).
+This work is licensed under the [GNU General Public License v3.0](https://github.com/freeconga/stuff/-/blob/master/LICENSE-GPLV30). All media and data files that are not source code are licensed under the [Creative Commons Attribution 4.0 BY-SA license](https://github.com/freeconga/stuff/-/blob/master/LICENSE-CCBYSA40).
 
 More information about licenses in [Opensource licenses](https://opensource.org/licenses/) and [Creative Commons licenses](https://creativecommons.org/licenses/).
