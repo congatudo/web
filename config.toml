@@ -23,7 +23,7 @@ pygmentCodeFences = true
 
 [Author]
   name = "Conga hacking community"
-  gitlab = "freeconga"
+  github = "freeconga"
   telegram = "freeconga"
 
 [[menu.main]]
