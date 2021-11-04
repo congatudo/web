@@ -1,4 +1,4 @@
-baseurl = "https://freecon.ga/"
+baseurl = "https://freeconga.github.cio/web/"
 contentdir    = "content"
 staticdir     = "static"
 layoutdir     = "layouts"
