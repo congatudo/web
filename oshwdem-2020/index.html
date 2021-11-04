@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>FreeConga en la OSHWDem-2020</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+		<style type="text/css">
+			.reveal h1,
+			.reveal h5 {
+				text-transform: none;
+			}
+			.darker { opacity: 0.4; }
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="project.jpg" data-background-size="100%">
+				</section>
+				<section>
+					<h1>nuestra historia</h1>
+				</section>
+				<section data-background="animalitos.jpg" data-background-size="100%">
+					<h5 style="margin-top:460px;">nuestros animalitos</h5>
+				</section>
+				<section data-background="raster-espia.png" data-background-size="100%">
+					<h5 style="margin:-300px 0 0 -400px;color: black;">y sus problemas ...</h5>
+				</section>
+				<section>
+					<h5 style="color: gray;">ahora, un poco de ...</h5>
+					<h1 class="fragment">INGENIERÍA</h1>
+					<h5 class="fragment">(inversa)</h5>
+					<h1 class="fragment">😎😅</h1>
+				</section>
+				<section>
+					<section>
+						<h1>qué llevan</h1>
+						<h5 class="darker">(a.k.a. &ldquo;hardware&rdquo;)</h5>
+					</section>
+					<section>
+						<h5>exterior</h5>
+						<img src="viomi-v2.jpg">
+					</section>
+					<section>
+						<h5>interior</h5>
+						<img src="CRL200S-PCB.png">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>qué hacen</h1>
+						<h5 class="darker">(a.k.a. &ldquo;software&rdquo;)</h5>
+					</section>
+					<section>
+						<h5>APPs</h5>
+						<img src="apps.png">
+					</section>
+					<section>
+						<h5>Tráfico de red</h5>
+						<img src="sniffing.jpg">
+					</section>
+					<section>
+						<h1>¿y qué <span style="color:red;">NO</span> hacen?</h1>
+						<p class="fragment">hardware desaprovechado (wifi, audio, ...)</p>
+						<p class="fragment">funcionalidades capadas (APP-dependientes)</p>
+						<p class="fragment">garantizar la privacidad <a href="https://www.businessinsider.es/aviso-grupo-hackers-espanoles-cecotec-aspiradoras-conga-685303" target="_blank">[&#8594;]</a></p>
+					</section>
+				</section>
+				<section>
+					<h1>¡OS al rescate!</h1>
+					<p class="fragment">Open Doñita <a href="https://gitlab.com/rastersoft/opendonita" target="_blank">[&#8594;]</a></p>
+					<p class="fragment">La comunidad <a href="https://freecon.ga/#this-project-sources-from-others" target="_blank">[&#8594;]</a></p>
+					<p class="fragment"><a href="https://freecon.ga">freecon.ga</a></p>
+				</section>
+				<section>
+					<div class="r-stack">
+						<div>
+							<h1>posibilidades</h1>
+							<p class="fragment">mejoras funcionales</p>
+							<p class="fragment">Open Hardware</p>
+							<p class="fragment">¿tu pareja de baile?</p>
+						</div>
+						<video controls data-autoplay class="fragment">
+							<source data-src="vamosabailar.mp4" type="video/mp4" />
+						</video>
+					</div>
+				</section>
+				<section data-background="davila.png" data-background-size="100%" data-autoslide="0">
+					<h1>¿preguntas?</h1>
+					<ul style="padding-bottom: 10%;">
+						<li><a href="https://freecon.ga">freecon.ga</a></li>
+						<li><a href="https://gitlab.com/freeconga">gitlab.com/freeconga</a></li>
+						<li><a href="mailto:freeconga@gmx.com">freeconga@gmx.com</a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				width: 1440,
+				height: 900,
+				margin: 0,
+				minScale: 0.2,
+				maxScale: 2.0,
+				controls: true,
+				progress: false,
+				center: true,
+				hash: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
