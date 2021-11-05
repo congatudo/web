@@ -38,8 +38,9 @@ used with [its author](https://obichero.com) permission.
 * [BadConga](https://github.com/adrigzr/badconga)
 * [Lupin's blog](https://blog.lupin.rocks/)
 * [I took the red pill](https://itooktheredpill.irgendwo.org/2020/rooting-xiaomi-vacuum-robot/)
-* [Valetudo](https://github.com/Hypfer/Valetudo)
+* [Valetudo Conga fork](https://github.com/adrigzr/Valetudo)
 * [Awesome Vacuum](https://github.com/awesome-vacuum/awesome-vacuum)
+* [Congatudo](https://github.com/freeconga/congatudo-add-on)
 
 ## Contact
 

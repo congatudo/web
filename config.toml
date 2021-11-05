@@ -40,3 +40,8 @@ pygmentCodeFences = true
     name = "Congas"
     url = "page/congas/"
     weight = 2
+
+[[menu.main]]
+    name = "Blog"
+    url = "blog/index.html"
+    weight = 4
