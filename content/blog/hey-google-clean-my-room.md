@@ -8,18 +8,18 @@ image: ""
 tags: ["google assistant", "home assistant", "conga", "valetudo", "zones", "segments"]
 ---
 
-**Goal:**
+## Goal
 
 Say "Hey Google, clean my room" to trigger your conga to clean that room
 
 
-**Requirements:**
+## Requirements
 - Valetudo integrated into Home assistant
 - Defined zones in Valetudo (or segments)
 - Google assistant integrated in home assistant
 - Vacuum domain exposed from home assistant to Google assistant
 
-**Steps:**
+## Steps
 
 1. Once you already know your zone IDs (under info button in zone section from Valetudo), yoy may have to create a script in home assistant to trigger that action in valetudo.
 
