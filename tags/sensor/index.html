@@ -3,14 +3,14 @@
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
-<title>segments - FreeCon.ga</title>
+<title>sensor - FreeCon.ga</title>
 <meta name=author content="Conga hacking community"><script type=application/ld+json>{"@context":"http://schema.org","@type":"WebSite","name":"FreeCon.ga","url":"https:\/\/freeconga.github.io\/web\/"}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Organization","name":"","url":"https:\/\/freeconga.github.io\/web\/"}</script>
-<meta property="og:title" content="segments">
+<meta property="og:title" content="sensor">
 <meta property="og:image" content="https://freeconga.github.io/web/freeconga.png">
-<meta property="og:url" content="https://freeconga.github.io/web/tags/segments/">
+<meta property="og:url" content="https://freeconga.github.io/web/tags/sensor/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="FreeCon.ga">
-<meta name=twitter:title content="segments">
+<meta name=twitter:title content="sensor">
 <meta name=twitter:image content="https://freeconga.github.io/web/freeconga.png">
 <meta name=twitter:card content="summary">
 <link href=https://freeconga.github.io/web/img/favicon.ico rel=icon type=image/x-icon>
@@ -100,7 +100,7 @@
 <div class=row>
 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <div class=tags-heading>
-<h1>segments</h1>
+<h1>sensor</h1>
 <hr class=small>
 </div>
 </div>
@@ -113,8 +113,8 @@
 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <div class=posts-list>
 <article class=post-preview>
-<a href=https://freeconga.github.io/web/blog/hey-google-clean-my-room/>
-<h2 class=post-title>Hey Google Clean My Room</h2>
+<a href=https://freeconga.github.io/web/blog/clean-me/>
+<h2 class=post-title>Clean Me</h2>
 </a>
 <p class=post-meta>
 <span class=post-meta>
@@ -123,17 +123,38 @@
 </span>
 </p>
 <div class=post-entry>
-Goal Say &ldquo;Hey Google, clean my room&rdquo; to trigger your conga to clean that room
-Requirements Valetudo integrated into Home assistant Defined zones in Valetudo (or segments) Google assistant integrated in home assistant Vacuum domain exposed from home assistant to Google assistant Steps Once you already know your zone IDs (under info button in zone section from Valetudo), yoy may have to create a script in home assistant to trigger that action in valetudo.
-<a href=https://freeconga.github.io/web/blog/hey-google-clean-my-room/ class=post-read-more>[Read More]</a>
+Goal Get your vacuum close to your bin once the tank is full
+Requirements Valetudo integrated into Home assistant Tank percentage sensor available (i.e. with this tuto) A defined spot in valetudo Steps Once the tank percentage sensor is available, this automation is easy just taking care about the actions you may need. We are going to trigger this action every time the vacuum is in the dock for more than 1h, but it will trigger just in case of the tank percentage sensor above of 100.
+<a href=https://freeconga.github.io/web/blog/clean-me/ class=post-read-more>[Read More]</a>
 </div>
 <div class=blog-tags>
-<a href=https://freeconga.github.io/web//tags/google-assistant/>google assistant</a>&nbsp;
 <a href=https://freeconga.github.io/web//tags/home-assistant/>home assistant</a>&nbsp;
-<a href=https://freeconga.github.io/web//tags/conga/>conga</a>&nbsp;
 <a href=https://freeconga.github.io/web//tags/valetudo/>valetudo</a>&nbsp;
-<a href=https://freeconga.github.io/web//tags/zones/>zones</a>&nbsp;
-<a href=https://freeconga.github.io/web//tags/segments/>segments</a>&nbsp;
+<a href=https://freeconga.github.io/web//tags/sensor/>sensor</a>&nbsp;
+<a href=https://freeconga.github.io/web//tags/automation/>automation</a>&nbsp;
+<a href=https://freeconga.github.io/web//tags/spot/>spot</a>&nbsp;
+</div>
+</article>
+<article class=post-preview>
+<a href=https://freeconga.github.io/web/blog/time-and-tank-virtual-sensors/>
+<h2 class=post-title>Time and Tank Virtual Sensors</h2>
+</a>
+<p class=post-meta>
+<span class=post-meta>
+<i class="fas fa-calendar"></i>&nbsp;
+&nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;txitxo0
+</span>
+</p>
+<div class=post-entry>
+Goal Valetudo is so great, but its home assistant integration miss out some good sensors like the time, area and tank fill percentage.
+With this guide, you are going to learn how to create virtual sensor to get the cleaning time and tank percentage based on this time.
+Requirements Valetudo integrated into Home assistant Steps Create one input date time helper. In this example the helper will be called RobotStartCleaningTime, being an date and time helper, so the id of this helper will be: input_datetime.
+<a href=https://freeconga.github.io/web/blog/time-and-tank-virtual-sensors/ class=post-read-more>[Read More]</a>
+</div>
+<div class=blog-tags>
+<a href=https://freeconga.github.io/web//tags/home-assistant/>home assistant</a>&nbsp;
+<a href=https://freeconga.github.io/web//tags/valetudo/>valetudo</a>&nbsp;
+<a href=https://freeconga.github.io/web//tags/sensor/>sensor</a>&nbsp;
 </div>
 </article>
 </div>

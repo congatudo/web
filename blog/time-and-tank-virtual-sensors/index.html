@@ -3,14 +3,23 @@
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
-<title>segments - FreeCon.ga</title>
+<title>Time and Tank Virtual Sensors - FreeCon.ga</title>
+<meta name=description content="Goal Valetudo is so great, but its home assistant integration miss out some good sensors like the time, area and tank fill percentage.
+With this guide, you are going to learn how to create virtual sensor to get the cleaning time and tank percentage based on this time.
+Requirements  Valetudo integrated into Home assistant  Steps   Create one input date time helper. In this example the helper will be called RobotStartCleaningTime, being an date and time helper, so the id of this helper will be: input_datetime.">
 <meta name=author content="Conga hacking community"><script type=application/ld+json>{"@context":"http://schema.org","@type":"WebSite","name":"FreeCon.ga","url":"https:\/\/freeconga.github.io\/web\/"}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Organization","name":"","url":"https:\/\/freeconga.github.io\/web\/"}</script>
-<meta property="og:title" content="segments">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/freeconga.github.io\/web\/","name":"home"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/freeconga.github.io\/web\/blog\/time-and-tank-virtual-sensors\/","name":"Time and tank virtual sensors"}}]}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Article","author":{"name":"txitxo0"},"headline":"Time and Tank Virtual Sensors","description":"Goal Valetudo is so great, but its home assistant integration miss out some good sensors like the time, area and tank fill percentage.\nWith this guide, you are going to learn how to create virtual sensor to get the cleaning time and tank percentage based on this time.\nRequirements  Valetudo integrated into Home assistant  Steps   Create one input date time helper. In this example the helper will be called RobotStartCleaningTime, being an date and time helper, so the id of this helper will be: input_datetime.","inLanguage":"en","wordCount":224,"datePublished":"2021-11-06T18:57:12","dateModified":"2021-11-06T18:57:12","image":"https:\/\/freeconga.github.io\/web\/freeconga.png","keywords":["home assistant, valetudo, sensor"],"mainEntityOfPage":"https:\/\/freeconga.github.io\/web\/blog\/time-and-tank-virtual-sensors\/","publisher":{"@type":"Organization","name":"https:\/\/freeconga.github.io\/web\/","logo":{"@type":"ImageObject","url":"https:\/\/freeconga.github.io\/web\/freeconga.png","height":60,"width":60}}}</script>
+<meta property="og:title" content="Time and Tank Virtual Sensors">
+<meta property="og:description" content="Goal Valetudo is so great, but its home assistant integration miss out some good sensors like the time, area and tank fill percentage.
+With this guide, you are going to learn how to create virtual sensor to get the cleaning time and tank percentage based on this time.
+Requirements  Valetudo integrated into Home assistant  Steps   Create one input date time helper. In this example the helper will be called RobotStartCleaningTime, being an date and time helper, so the id of this helper will be: input_datetime.">
 <meta property="og:image" content="https://freeconga.github.io/web/freeconga.png">
-<meta property="og:url" content="https://freeconga.github.io/web/tags/segments/">
+<meta property="og:url" content="https://freeconga.github.io/web/blog/time-and-tank-virtual-sensors/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="FreeCon.ga">
-<meta name=twitter:title content="segments">
+<meta name=twitter:title content="Time and Tank Virtual Sensors">
+<meta name=twitter:description content="Goal Valetudo is so great, but its home assistant integration miss out some good sensors like the time, area and tank fill percentage.
+With this guide, you are going to learn how to create virtual …">
 <meta name=twitter:image content="https://freeconga.github.io/web/freeconga.png">
 <meta name=twitter:card content="summary">
 <link href=https://freeconga.github.io/web/img/favicon.ico rel=icon type=image/x-icon>
@@ -99,8 +108,8 @@
 <div class=container>
 <div class=row>
 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-<div class=tags-heading>
-<h1>segments</h1>
+<div class=blog-heading>
+<h1>Time and Tank Virtual Sensors</h1>
 <hr class=small>
 </div>
 </div>
@@ -108,38 +117,62 @@
 </div>
 </div>
 </header>
-<div class=container role=main>
-<div class=row>
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-<div class=posts-list>
-<article class=post-preview>
-<a href=https://freeconga.github.io/web/blog/hey-google-clean-my-room/>
-<h2 class=post-title>Hey Google Clean My Room</h2>
-</a>
-<p class=post-meta>
-<span class=post-meta>
-<i class="fas fa-calendar"></i>&nbsp;
-&nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;txitxo0
-</span>
-</p>
-<div class=post-entry>
-Goal Say &ldquo;Hey Google, clean my room&rdquo; to trigger your conga to clean that room
-Requirements Valetudo integrated into Home assistant Defined zones in Valetudo (or segments) Google assistant integrated in home assistant Vacuum domain exposed from home assistant to Google assistant Steps Once you already know your zone IDs (under info button in zone section from Valetudo), yoy may have to create a script in home assistant to trigger that action in valetudo.
-<a href=https://freeconga.github.io/web/blog/hey-google-clean-my-room/ class=post-read-more>[Read More]</a>
-</div>
-<div class=blog-tags>
-<a href=https://freeconga.github.io/web//tags/google-assistant/>google assistant</a>&nbsp;
-<a href=https://freeconga.github.io/web//tags/home-assistant/>home assistant</a>&nbsp;
-<a href=https://freeconga.github.io/web//tags/conga/>conga</a>&nbsp;
-<a href=https://freeconga.github.io/web//tags/valetudo/>valetudo</a>&nbsp;
-<a href=https://freeconga.github.io/web//tags/zones/>zones</a>&nbsp;
-<a href=https://freeconga.github.io/web//tags/segments/>segments</a>&nbsp;
-</div>
-</article>
+<div class=b-hero>
+<img class=b-hero__image src>
+<div class=b-hero__info>
+<h1 class=b-hero__title>Time and Tank Virtual Sensors</h1>
+<div class=b-hero__author-date>
+<span>Written by: txitxo0</span>
+<span>November 6, 2021</span>
 </div>
 </div>
 </div>
-</div>
+<h2 id=goal>Goal</h2>
+<p>Valetudo is so great, but its home assistant integration miss out some good sensors like the time, area and tank fill percentage.</p>
+<p>With this guide, you are going to learn how to create virtual sensor to get the cleaning time and tank percentage based on this time.</p>
+<h2 id=requirements>Requirements</h2>
+<ul>
+<li>Valetudo integrated into Home assistant</li>
+</ul>
+<h2 id=steps>Steps</h2>
+<ol>
+<li>
+<p>Create one input date time helper. In this example the helper will be called RobotStartCleaningTime, being an date and time helper, so the id of this helper will be: <code>input_datetime.robotstartcleaningtime</code></p>
+</li>
+<li>
+<p>In the configuration file, we are going to create three sensors</p>
+<ol>
+<li>
+<p>All history cleaning time</p>
+<pre><code>  - platform: history_stats
+    name: Conga Cleaning
+    entity_id: vacuum.conga
+    state: 'cleaning'
+    type: time
+    start: &quot;{{ state_attr('input_datetime.robotstartcleaningtime', 'timestamp') }}&quot;
+    end: '{{ now() }}'
+</code></pre>
+<p>With the entity_id for you vacuum robot and the helper you created before</p>
+</li>
+<li>
+<p>Tank virtual sensor, based on the cleaning time stats and conga cleaning in time</p>
+<pre><code>  - platform: template
+    sensors:
+      conga_cleaning_time:
+        friendly_name: &quot;Conga Cleaning Time&quot;
+        value_template: &quot;{{ state_attr('sensor.conga_cleaning', 'value') }}&quot;
+      conga_tank_percentage:
+        friendly_name: &quot;Conga Tank Percentage&quot;
+        value_template: &quot;{{ ( states('sensor.conga_cleaning')|float * (100)|float / (10)|float ) | round(0)  }}&quot;
+</code></pre>
+<p>This conga_tank_percentage is valid for my tank based on rule how many minutes cleaning the tank needs to be full . Do the maths for your needs</p>
+</li>
+<li>
+<p>Now, you are able to use this sensor in some card or even better, to trigger some automation</p>
+</li>
+</ol>
+</li>
+</ol>
 <footer>
 <div class=container>
 <div class=row>
