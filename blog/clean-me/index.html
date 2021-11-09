@@ -7,7 +7,7 @@
 <meta name=description content="Goal Get your vacuum close to your bin once the tank is full
 Requirements  Valetudo integrated into Home assistant Tank percentage sensor available (i.e. with this tuto) A defined spot in valetudo  Steps Once the tank percentage sensor is available, this automation is easy just taking care about the actions you may need. We are going to trigger this action every time the vacuum is in the dock for more than 1h, but it will trigger just in case of the tank percentage sensor above of 100.">
 <meta name=author content="Conga hacking community"><script type=application/ld+json>{"@context":"http://schema.org","@type":"WebSite","name":"FreeCon.ga","url":"https:\/\/freeconga.github.io\/web\/"}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Organization","name":"","url":"https:\/\/freeconga.github.io\/web\/"}</script>
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/freeconga.github.io\/web\/","name":"home"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/freeconga.github.io\/web\/blog\/clean-me\/","name":"Clean me"}}]}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Article","author":{"name":"txitxo0"},"headline":"Clean Me","description":"Goal Get your vacuum close to your bin once the tank is full\nRequirements  Valetudo integrated into Home assistant Tank percentage sensor available (i.e. with this tuto) A defined spot in valetudo  Steps Once the tank percentage sensor is available, this automation is easy just taking care about the actions you may need. We are going to trigger this action every time the vacuum is in the dock for more than 1h, but it will trigger just in case of the tank percentage sensor above of 100.","inLanguage":"en","wordCount":268,"datePublished":"2021-11-06T19:16:24","dateModified":"2021-11-06T19:16:24","image":"https:\/\/freeconga.github.io\/web\/freeconga.png","keywords":["home assistant, valetudo, sensor, automation, spot"],"mainEntityOfPage":"https:\/\/freeconga.github.io\/web\/blog\/clean-me\/","publisher":{"@type":"Organization","name":"https:\/\/freeconga.github.io\/web\/","logo":{"@type":"ImageObject","url":"https:\/\/freeconga.github.io\/web\/freeconga.png","height":60,"width":60}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/freeconga.github.io\/web\/","name":"home"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/freeconga.github.io\/web\/blog\/clean-me\/","name":"Clean me"}}]}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Article","author":{"name":"txitxo0"},"headline":"Clean Me","description":"Goal Get your vacuum close to your bin once the tank is full\nRequirements  Valetudo integrated into Home assistant Tank percentage sensor available (i.e. with this tuto) A defined spot in valetudo  Steps Once the tank percentage sensor is available, this automation is easy just taking care about the actions you may need. We are going to trigger this action every time the vacuum is in the dock for more than 1h, but it will trigger just in case of the tank percentage sensor above of 100.","inLanguage":"en","wordCount":190,"datePublished":"2021-11-06T19:16:24","dateModified":"2021-11-06T19:16:24","image":"https:\/\/freeconga.github.io\/web\/freeconga.png","keywords":["home assistant, valetudo, sensor, automation, spot"],"mainEntityOfPage":"https:\/\/freeconga.github.io\/web\/blog\/clean-me\/","publisher":{"@type":"Organization","name":"https:\/\/freeconga.github.io\/web\/","logo":{"@type":"ImageObject","url":"https:\/\/freeconga.github.io\/web\/freeconga.png","height":60,"width":60}}}</script>
 <meta property="og:title" content="Clean Me">
 <meta property="og:description" content="Goal Get your vacuum close to your bin once the tank is full
 Requirements  Valetudo integrated into Home assistant Tank percentage sensor available (i.e. with this tuto) A defined spot in valetudo  Steps Once the tank percentage sensor is available, this automation is easy just taking care about the actions you may need. We are going to trigger this action every time the vacuum is in the dock for more than 1h, but it will trigger just in case of the tank percentage sensor above of 100.">
@@ -21,7 +21,7 @@ Requirements  Valetudo integrated into Home assistant Tank percentage sensor ava
 <meta name=twitter:image content="https://freeconga.github.io/web/freeconga.png">
 <meta name=twitter:card content="summary">
 <link href=https://freeconga.github.io/web/img/favicon.ico rel=icon type=image/x-icon>
-<meta name=generator content="Hugo 0.89.1">
+<meta name=generator content="Hugo 0.89.2">
 <link rel=alternate href=https://freeconga.github.io/web/index.xml type=application/rss+xml title=FreeCon.ga><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css integrity=sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y crossorigin=anonymous>
 <link rel=stylesheet href=https://use.fontawesome.com/releases/v5.5.0/css/all.css integrity=sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU crossorigin=anonymous>
 <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css integrity=sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u crossorigin=anonymous><link rel=stylesheet href=https://freeconga.github.io/web/css/main.css><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
@@ -145,53 +145,52 @@ Requirements  Valetudo integrated into Home assistant Tank percentage sensor ava
 <li>Reset the sensor</li>
 </ul>
 <p>So, to get this, one possible solution could be the one below</p>
-<pre><code>    alias: '[CONGA] Limpiame'
-    description: ''
-    trigger:
-    - platform: state
-        entity_id: vacuum.conga
-        to: docked
-        for:
-        hours: 1
-        minutes: 0
-        seconds: 0
-        milliseconds: 0
-    condition:
-    - condition: numeric_state
-        entity_id: sensor.conga_tank_percentage
-        above: '100'
-    action:
-    - service: mqtt.publish
-        data:
-        payload: a9663a44-7e23-4134-80ca-afcfce4ad368
-        topic: valetudo/robot/GoToLocationCapability/go/set
-    - service: mqtt.publish
-        data:
-        topic: valetudo/robot/FanSpeedControlCapability/preset/set
-        payload: low
-    - delay:
-        hours: 0
-        minutes: 1
-        seconds: 30
-        milliseconds: 0
-    - service: vacuum.stop
-        target:
-        device_id: 4a640c13ca7d207aeb6fa02ca933825f
-    - service: mqtt.publish
-        data:
-        topic: valetudo/robot/FanSpeedControlCapability/preset/set
-        payload: medium
-    - service: notify.mobile_app_sm_g781b
-        data:
-        message: I am dirty, please... empty me.
-    - service: input_datetime.set_datetime
-        data:
-        datetime: '{{ now().strftime(''%Y-%m-%d %H:%M:%S'') }}'
-        target:
-        entity_id: input_datetime.robotstartcleaningtime
-    mode: single
-</code></pre>
-<p>Take special care with the vacuum id you have and the topic you may point for your case. MQTT topic prefix and identifier</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml><span class=w>        </span><span class=nt>alias</span><span class=p>:</span><span class=w> </span><span class=s1>&#39;[CONGA] Limpiame&#39;</span><span class=w>
+</span><span class=w>        </span><span class=nt>description</span><span class=p>:</span><span class=w> </span><span class=s1>&#39;&#39;</span><span class=w>
+</span><span class=w>        </span><span class=nt>trigger</span><span class=p>:</span><span class=w>
+</span><span class=w>        </span>- <span class=nt>platform</span><span class=p>:</span><span class=w> </span><span class=l>state</span><span class=w>
+</span><span class=w>            </span><span class=nt>entity_id</span><span class=p>:</span><span class=w> </span><span class=l>vacuum.conga</span><span class=w>
+</span><span class=w>            </span><span class=nt>to</span><span class=p>:</span><span class=w> </span><span class=l>docked</span><span class=w>
+</span><span class=w>            </span><span class=nt>for</span><span class=p>:</span><span class=w>
+</span><span class=w>            </span><span class=nt>hours</span><span class=p>:</span><span class=w> </span><span class=m>1</span><span class=w>
+</span><span class=w>            </span><span class=nt>minutes</span><span class=p>:</span><span class=w> </span><span class=m>0</span><span class=w>
+</span><span class=w>            </span><span class=nt>seconds</span><span class=p>:</span><span class=w> </span><span class=m>0</span><span class=w>
+</span><span class=w>            </span><span class=nt>milliseconds</span><span class=p>:</span><span class=w> </span><span class=m>0</span><span class=w>
+</span><span class=w>        </span><span class=nt>condition</span><span class=p>:</span><span class=w>
+</span><span class=w>        </span>- <span class=nt>condition</span><span class=p>:</span><span class=w> </span><span class=l>numeric_state</span><span class=w>
+</span><span class=w>            </span><span class=nt>entity_id</span><span class=p>:</span><span class=w> </span><span class=l>sensor.conga_tank_percentage</span><span class=w>
+</span><span class=w>            </span><span class=nt>above</span><span class=p>:</span><span class=w> </span><span class=s1>&#39;100&#39;</span><span class=w>
+</span><span class=w>        </span><span class=nt>action</span><span class=p>:</span><span class=w>
+</span><span class=w>        </span>- <span class=nt>service</span><span class=p>:</span><span class=w> </span><span class=l>mqtt.publish</span><span class=w>
+</span><span class=w>            </span><span class=nt>data</span><span class=p>:</span><span class=w>
+</span><span class=w>            </span><span class=nt>payload</span><span class=p>:</span><span class=w> </span><span class=l>a9663a44-7e23-4134-80ca-afcfce4ad368</span><span class=w>
+</span><span class=w>            </span><span class=nt>topic</span><span class=p>:</span><span class=w> </span><span class=l>valetudo/robot/GoToLocationCapability/go/set</span><span class=w>
+</span><span class=w>        </span>- <span class=nt>service</span><span class=p>:</span><span class=w> </span><span class=l>mqtt.publish</span><span class=w>
+</span><span class=w>            </span><span class=nt>data</span><span class=p>:</span><span class=w>
+</span><span class=w>            </span><span class=nt>topic</span><span class=p>:</span><span class=w> </span><span class=l>valetudo/robot/FanSpeedControlCapability/preset/set</span><span class=w>
+</span><span class=w>            </span><span class=nt>payload</span><span class=p>:</span><span class=w> </span><span class=l>low</span><span class=w>
+</span><span class=w>        </span>- <span class=nt>delay</span><span class=p>:</span><span class=w>
+</span><span class=w>            </span><span class=nt>hours</span><span class=p>:</span><span class=w> </span><span class=m>0</span><span class=w>
+</span><span class=w>            </span><span class=nt>minutes</span><span class=p>:</span><span class=w> </span><span class=m>1</span><span class=w>
+</span><span class=w>            </span><span class=nt>seconds</span><span class=p>:</span><span class=w> </span><span class=m>30</span><span class=w>
+</span><span class=w>            </span><span class=nt>milliseconds</span><span class=p>:</span><span class=w> </span><span class=m>0</span><span class=w>
+</span><span class=w>        </span>- <span class=nt>service</span><span class=p>:</span><span class=w> </span><span class=l>vacuum.stop</span><span class=w>
+</span><span class=w>            </span><span class=nt>target</span><span class=p>:</span><span class=w>
+</span><span class=w>            </span><span class=nt>device_id</span><span class=p>:</span><span class=w> </span><span class=l>4a640c13ca7d207aeb6fa02ca933825f</span><span class=w>
+</span><span class=w>        </span>- <span class=nt>service</span><span class=p>:</span><span class=w> </span><span class=l>mqtt.publish</span><span class=w>
+</span><span class=w>            </span><span class=nt>data</span><span class=p>:</span><span class=w>
+</span><span class=w>            </span><span class=nt>topic</span><span class=p>:</span><span class=w> </span><span class=l>valetudo/robot/FanSpeedControlCapability/preset/set</span><span class=w>
+</span><span class=w>            </span><span class=nt>payload</span><span class=p>:</span><span class=w> </span><span class=l>medium</span><span class=w>
+</span><span class=w>        </span>- <span class=nt>service</span><span class=p>:</span><span class=w> </span><span class=l>notify.mobile_app_sm_g781b</span><span class=w>
+</span><span class=w>            </span><span class=nt>data</span><span class=p>:</span><span class=w>
+</span><span class=w>            </span><span class=nt>message</span><span class=p>:</span><span class=w> </span><span class=l>I am dirty, please... empty me.</span><span class=w>
+</span><span class=w>        </span>- <span class=nt>service</span><span class=p>:</span><span class=w> </span><span class=l>input_datetime.set_datetime</span><span class=w>
+</span><span class=w>            </span><span class=nt>data</span><span class=p>:</span><span class=w>
+</span><span class=w>            </span><span class=nt>datetime</span><span class=p>:</span><span class=w> </span><span class=s1>&#39;{{ now().strftime(&#39;&#39;%Y-%m-%d %H:%M:%S&#39;&#39;) }}&#39;</span><span class=w>
+</span><span class=w>            </span><span class=nt>target</span><span class=p>:</span><span class=w>
+</span><span class=w>            </span><span class=nt>entity_id</span><span class=p>:</span><span class=w> </span><span class=l>input_datetime.robotstartcleaningtime</span><span class=w>
+</span><span class=w>        </span><span class=nt>mode</span><span class=p>:</span><span class=w> </span><span class=l>single</span><span class=w>
+</span></code></pre></div><p>Take special care with the vacuum id you have and the topic you may point for your case. MQTT topic prefix and identifier</p>
 <footer>
 <div class=container>
 <div class=row>
@@ -222,7 +221,7 @@ Conga hacking community
 <a href=https://freeconga.github.io/web/>FreeCon.ga</a>
 </p>
 <p class="credits theme-by text-muted">
-<a href=https://gohugo.io>Hugo v0.89.1</a> powered &nbsp;&bull;&nbsp; Theme <a href=https://github.com/halogenica/beautifulhugo>Beautiful Hugo</a> adapted from <a href=https://deanattali.com/beautiful-jekyll/>Beautiful Jekyll</a>
+<a href=https://gohugo.io>Hugo v0.89.2</a> powered &nbsp;&bull;&nbsp; Theme <a href=https://github.com/halogenica/beautifulhugo>Beautiful Hugo</a> adapted from <a href=https://deanattali.com/beautiful-jekyll/>Beautiful Jekyll</a>
 </p>
 </div>
 </div>
