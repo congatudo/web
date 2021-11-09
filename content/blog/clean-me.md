@@ -32,6 +32,7 @@ Once the tank percentage sensor is available, this automation is easy just takin
 
 So, to get this, one possible solution could be the one below
 
+```yaml
         alias: '[CONGA] Limpiame'
         description: ''
         trigger:
@@ -77,5 +78,6 @@ So, to get this, one possible solution could be the one below
             target:
             entity_id: input_datetime.robotstartcleaningtime
         mode: single
+```
 
 Take special care with the vacuum id you have and the topic you may point for your case. MQTT topic prefix and identifier
