@@ -108,33 +108,104 @@
 </div>
 </div>
 </header>
-<h1 class="col-header dark-orange">All blog posts</h1>
-<div class=post-preview>
-<img class=post-preview__left src>
-<div class=post-preview__right>
-<a class=preview-title href=https://freeconga.github.io/web/blog/empower-your-conga-voice/index.html>Empower Your Conga Voice</a>
-<span>November 11, 2021</span>
+<div class=container role=main>
+<div class=row>
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class=posts-list>
+<article class=post-preview>
+<a href=https://freeconga.github.io/web/blog/empower-your-conga-voice/>
+<h2 class=post-title>Empower Your Conga Voice</h2>
+</a>
+<p class=post-meta>
+<span class=post-meta>
+<i class="fas fa-calendar"></i>&nbsp;
+&nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Dani Perry
+</span>
+</p>
+<div class=post-entry>
+Goal Conga 4090 is able to talk instead of just beep to us, so here it is a guide to get it
+Requirements A rooted conga At writing time, we just test in 4090 conga model, in other model some people already experimented some trouble. Please, do it just if you know what are you doing.
+Steps It is a good practice to do a back up if all the files we are going to handle, so:
+<a href=https://freeconga.github.io/web/blog/empower-your-conga-voice/ class=post-read-more>[Read More]</a>
+</div>
+<div class=blog-tags>
+<a href=https://freeconga.github.io/web//tags/sounds/>sounds</a>&nbsp;
+<a href=https://freeconga.github.io/web//tags/conga/>conga</a>&nbsp;
+<a href=https://freeconga.github.io/web//tags/voice/>voice</a>&nbsp;
+<a href=https://freeconga.github.io/web//tags/root/>root</a>&nbsp;
+</div>
+</article>
+<article class=post-preview>
+<a href=https://freeconga.github.io/web/blog/clean-me/>
+<h2 class=post-title>Clean Me</h2>
+</a>
+<p class=post-meta>
+<span class=post-meta>
+<i class="fas fa-calendar"></i>&nbsp;
+&nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;txitxo0
+</span>
+</p>
+<div class=post-entry>
+Goal Get your vacuum close to your bin once the tank is full
+Requirements Valetudo integrated into Home assistant Tank percentage sensor available (i.e. with this tuto) A defined spot in valetudo Steps Once the tank percentage sensor is available, this automation is easy just taking care about the actions you may need. We are going to trigger this action every time the vacuum is in the dock for more than 1h, but it will trigger just in case of the tank percentage sensor above of 100.
+<a href=https://freeconga.github.io/web/blog/clean-me/ class=post-read-more>[Read More]</a>
+</div>
+<div class=blog-tags>
+<a href=https://freeconga.github.io/web//tags/home-assistant/>home assistant</a>&nbsp;
+<a href=https://freeconga.github.io/web//tags/valetudo/>valetudo</a>&nbsp;
+<a href=https://freeconga.github.io/web//tags/sensor/>sensor</a>&nbsp;
+<a href=https://freeconga.github.io/web//tags/automation/>automation</a>&nbsp;
+<a href=https://freeconga.github.io/web//tags/spot/>spot</a>&nbsp;
+</div>
+</article>
+<article class=post-preview>
+<a href=https://freeconga.github.io/web/blog/time-and-tank-virtual-sensors/>
+<h2 class=post-title>Time and Tank Virtual Sensors</h2>
+</a>
+<p class=post-meta>
+<span class=post-meta>
+<i class="fas fa-calendar"></i>&nbsp;
+&nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;txitxo0
+</span>
+</p>
+<div class=post-entry>
+Goal Valetudo is so great, but its home assistant integration miss out some good sensors like the time, area and tank fill percentage.
+With this guide, you are going to learn how to create virtual sensor to get the cleaning time and tank percentage based on this time.
+Requirements Valetudo integrated into Home assistant Steps Create one input date time helper. In this example the helper will be called RobotStartCleaningTime, being an date and time helper, so the id of this helper will be: input_datetime.
+<a href=https://freeconga.github.io/web/blog/time-and-tank-virtual-sensors/ class=post-read-more>[Read More]</a>
+</div>
+<div class=blog-tags>
+<a href=https://freeconga.github.io/web//tags/home-assistant/>home assistant</a>&nbsp;
+<a href=https://freeconga.github.io/web//tags/valetudo/>valetudo</a>&nbsp;
+<a href=https://freeconga.github.io/web//tags/sensor/>sensor</a>&nbsp;
+</div>
+</article>
+<article class=post-preview>
+<a href=https://freeconga.github.io/web/blog/hey-google-clean-my-room/>
+<h2 class=post-title>Hey Google Clean My Room</h2>
+</a>
+<p class=post-meta>
+<span class=post-meta>
+<i class="fas fa-calendar"></i>&nbsp;
+&nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;txitxo0
+</span>
+</p>
+<div class=post-entry>
+Goal Say &ldquo;Hey Google, clean my room&rdquo; to trigger your conga to clean that room
+Requirements Valetudo integrated into Home assistant Defined zones in Valetudo (or segments) Google assistant integrated in home assistant Vacuum domain exposed from home assistant to Google assistant Steps Once you already know your zone IDs (under info button in zone section from Valetudo), yoy may have to create a script in home assistant to trigger that action in valetudo.
+<a href=https://freeconga.github.io/web/blog/hey-google-clean-my-room/ class=post-read-more>[Read More]</a>
+</div>
+<div class=blog-tags>
+<a href=https://freeconga.github.io/web//tags/google-assistant/>google assistant</a>&nbsp;
+<a href=https://freeconga.github.io/web//tags/home-assistant/>home assistant</a>&nbsp;
+<a href=https://freeconga.github.io/web//tags/conga/>conga</a>&nbsp;
+<a href=https://freeconga.github.io/web//tags/valetudo/>valetudo</a>&nbsp;
+<a href=https://freeconga.github.io/web//tags/zones/>zones</a>&nbsp;
+<a href=https://freeconga.github.io/web//tags/segments/>segments</a>&nbsp;
+</div>
+</article>
 </div>
 </div>
-<div class=post-preview>
-<img class=post-preview__left src>
-<div class=post-preview__right>
-<a class=preview-title href=https://freeconga.github.io/web/blog/clean-me/index.html>Clean Me</a>
-<span>November 6, 2021</span>
-</div>
-</div>
-<div class=post-preview>
-<img class=post-preview__left src>
-<div class=post-preview__right>
-<a class=preview-title href=https://freeconga.github.io/web/blog/time-and-tank-virtual-sensors/index.html>Time and Tank Virtual Sensors</a>
-<span>November 6, 2021</span>
-</div>
-</div>
-<div class=post-preview>
-<img class=post-preview__left src>
-<div class=post-preview__right>
-<a class=preview-title href=https://freeconga.github.io/web/blog/hey-google-clean-my-room/index.html>Hey Google Clean My Room</a>
-<span>November 6, 2021</span>
 </div>
 </div>
 <footer>
