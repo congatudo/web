@@ -2,12 +2,11 @@
 title: "Get area&time in Home Assistant from Valetudo"
 author: "@gtrabanco & @txitxo0"
 type: ""
-date: 2021-12-09T19:16:24+01:00
+date: 2021-12-09T15:30:29+01:00
 subtitle: ""
 image: ""
 tags: ["home assistant", "valetudo", "sensor", "virtual"]
 ---
-
 ## Goal
 
 Get Home Assistant sensors from Valetudo to measure time and area last cleaning
