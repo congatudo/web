@@ -113,6 +113,32 @@
 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <div class=posts-list>
 <article class=post-preview>
+<a href=https://freecon.ga/blog/get-area-and-time-in-ha-from-valetudo/>
+<h2 class=post-title>Get area&time in Home Assistant from Valetudo</h2>
+</a>
+<p class=post-meta>
+<span class=post-meta>
+<i class="fas fa-calendar"></i>&nbsp;
+&nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;@gtrabanco & @txitxo0
+    
+  
+  
+</span>
+</p>
+<div class=post-entry>
+Goal Get Home Assistant sensors from Valetudo to measure time and area last cleaning
+Requirements Valetudo integrated into Home assistant Api Swagger available (For congatudo, just add a valid port for webui in the addon configuration) Valetudo should have a fixed IP Steps In configuration.yaml add the code below to get sensors build from the valetudo api every 5 seconds
+rest:- scan_interval:5resource:"http://&lt;ha_ip>:8080/api/v2/robot/state/attributes"sensor:- name:"Vacuum last clean area"value_template:"{{ value_json[4]['value'] }}"state_class:"measurement"json_attributes_path:"$[4]"json_attributes:- __class- metadata- type- value- name:"Vacuum last clean duration"value_template:"{{ value_json[3]['value'] }}"device_class:"timestamp"state_class:"total"json_attributes_path:"$[3]"json_attributes:- __class- metadata- type- valueNow, you have sensors for both time and area measures but just in default units, so in order to get them in human readable units, you are able to build virtual templated sensors.
+<a href=https://freecon.ga/blog/get-area-and-time-in-ha-from-valetudo/ class=post-read-more>[Read More]</a>
+</div>
+<div class=blog-tags>
+<a href=https://freecon.ga//tags/home-assistant/>home assistant</a>&nbsp;
+<a href=https://freecon.ga//tags/valetudo/>valetudo</a>&nbsp;
+<a href=https://freecon.ga//tags/sensor/>sensor</a>&nbsp;
+<a href=https://freecon.ga//tags/virtual/>virtual</a>&nbsp;
+</div>
+</article>
+<article class=post-preview>
 <a href=https://freecon.ga/blog/empower-your-conga-voice/>
 <h2 class=post-title>Empower Your Conga Voice</h2>
 </a>
