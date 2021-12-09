@@ -24,7 +24,7 @@ In configuration.yaml add the code below to get sensors build from the valetudo 
 ```yaml
     rest:
         - scan_interval: 5
-            resource: "http://<ha_ip>:8080/api/v2/robot/state/attributes"
+            resource: "http://<valetudo_or_ha_ip>:<valetudo_port>/api/v2/robot/state/attributes"
             sensor:
             - name: "Vacuum last clean area"
                 value_template: "{{ value_json[4]['value'] }}"
