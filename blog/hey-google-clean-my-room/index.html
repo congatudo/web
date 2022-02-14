@@ -21,7 +21,7 @@ Requirements  Valetudo integrated into Home assistant Defined zones in Valetudo 
 <meta name=twitter:image content="https://freecon.ga/freeconga.png">
 <meta name=twitter:card content="summary">
 <link href=https://freecon.ga/img/favicon.ico rel=icon type=image/x-icon>
-<meta name=generator content="Hugo 0.90.0">
+<meta name=generator content="Hugo 0.92.2">
 <link rel=alternate href=https://freecon.ga/index.xml type=application/rss+xml title=FreeCon.ga><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css integrity=sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y crossorigin=anonymous>
 <link rel=stylesheet href=https://use.fontawesome.com/releases/v5.5.0/css/all.css integrity=sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU crossorigin=anonymous>
 <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css integrity=sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u crossorigin=anonymous><link rel=stylesheet href=https://freecon.ga/css/main.css><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
@@ -138,7 +138,7 @@ Requirements  Valetudo integrated into Home assistant Defined zones in Valetudo 
 </span><span class=w></span>- <span class=nt>service</span><span class=p>:</span><span class=w> </span><span class=l>mqtt.publish</span><span class=w>
 </span><span class=w>    </span><span class=nt>data</span><span class=p>:</span><span class=w>
 </span><span class=w>        </span><span class=nt>topic</span><span class=p>:</span><span class=w> </span><span class=l>valetudo/robot/ZoneCleaningCapability/start/set</span><span class=w>
-</span><span class=w>        </span><span class=nt>payload</span><span class=p>:</span><span class=w> </span><span class=s1>&#39;[&#34;0e053bed-22b6-4b50-8a8f-b6fed99ec0ed&#34;]&#39;</span><span class=w>
+</span><span class=w>        </span><span class=nt>payload</span><span class=p>:</span><span class=w> </span><span class=l>0e053bed-22b6-4b50-8a8f-b6fed99ec0ed</span><span class=w>
 </span><span class=w></span><span class=nt>mode</span><span class=p>:</span><span class=w> </span><span class=l>single</span><span class=w>
 </span><span class=w></span><span class=nt>icon</span><span class=p>:</span><span class=w> </span><span class=l>hass:sofa</span><span class=w>
 </span></code></pre></div><p>Where the topic is <code>&lt;TOPIC PREFIX>/&lt;IDENTIFIER>/ZoneCleaningCapability/start/</code> is the pone who trigger the action using <code>robot</code> as the name of the conga robot, you can get your identifier by going through settings/MQTT/identity/indetifier in Valetudo. The topic prefix is under the same menu in Customization/Topic Prefix, by default should be &ldquo;valetudo&rdquo;</p>
@@ -211,7 +211,7 @@ Conga hacking community
 <a href=https://freecon.ga/>FreeCon.ga</a>
 </p>
 <p class="credits theme-by text-muted">
-<a href=https://gohugo.io>Hugo v0.90.0</a> powered &nbsp;&bull;&nbsp; Theme <a href=https://github.com/halogenica/beautifulhugo>Beautiful Hugo</a> adapted from <a href=https://deanattali.com/beautiful-jekyll/>Beautiful Jekyll</a>
+<a href=https://gohugo.io>Hugo v0.92.2</a> powered &nbsp;&bull;&nbsp; Theme <a href=https://github.com/halogenica/beautifulhugo>Beautiful Hugo</a> adapted from <a href=https://deanattali.com/beautiful-jekyll/>Beautiful Jekyll</a>
 </p>
 </div>
 </div>
