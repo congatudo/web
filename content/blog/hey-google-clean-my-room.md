@@ -30,7 +30,7 @@ Say "Hey Google, clean my room" to trigger your conga to clean that room
     - service: mqtt.publish
         data:
             topic: valetudo/robot/ZoneCleaningCapability/start/set
-            payload: '["0e053bed-22b6-4b50-8a8f-b6fed99ec0ed"]'
+            payload: 0e053bed-22b6-4b50-8a8f-b6fed99ec0ed
     mode: single
     icon: hass:sofa
     ```
