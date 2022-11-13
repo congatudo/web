@@ -1,8 +1,8 @@
-# freecon.ga
+# congatudo.cloud
 
 A place to free your Cecotec's Conga vacuum cleanning robot!
 
-This is [our web page](https://freecon.ga/), done with [Hugo](https://gohugo.io/) using
+This is [our web page](https://congatudo.cloud/), done with [Hugo](https://gohugo.io/) using
 the [Beautiful Hugo theme](https://github.com/halogenica/beautifulhugo).
 
 ## LICENSE
