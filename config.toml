@@ -1,9 +1,9 @@
-baseurl = "https://freecon.ga/"
+baseurl = "https://congatudo.cloud/"
 contentdir    = "content"
 staticdir     = "static"
 layoutdir     = "layouts"
 publishdir    = "public"
-title         = "FreeCon.ga"
+title         = "Congatudo.cloud"
 canonifyurls  = true
 
 DefaultContentLanguage = "en"
@@ -23,8 +23,8 @@ pygmentCodeFences = true
 
 [Author]
   name = "Conga hacking community"
-  github = "freeconga"
-  telegram = "freeconga"
+  github = "congatudo"
+  telegram = "congatudo"
 
 [[menu.main]]
     name = "Home"
